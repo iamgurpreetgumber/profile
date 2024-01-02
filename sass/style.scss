@@ -7,9 +7,9 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #DD356E !default;
-$brand-secondary: #FEE856 !default;
-$brand-tertiary: #2A528A !default;
+$brand-primary: #43766C !default;
+$brand-secondary: #F8FAE5 !default;
+$brand-tertiary: #B19470 !default;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -22,7 +22,7 @@ $brand-overlay-color: #4c4a8a;
 $brand-bg-color: $brand-white;
 
 $input-border-focus:  $brand-primary !default;
-$form-group-margin-bottom:       30px !default;
+$form-group-margin-bottom: 30px !default;
 
 
 
@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			color: $brand-white;
 			border: none!important;
 			font-size: 18px;
-			@media screen and(max-width: $screen-sm){
+			@media screen and (max-width: $screen-sm){
 				width: 80%;
 				margin: 0 auto;
 			}
@@ -527,10 +527,10 @@ h1, h2, h3, h4, h5, h6, figure {
 		background-repeat: no-repeat;
 		position: relative;
 		height: 430px;
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			height: 210px;
 		}
-		@media screen and(max-width: $screen-xs){
+		@media screen and (max-width: $screen-xs){
 			display: none;
 		}
 	}
@@ -646,7 +646,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				box-shadow: 0px 21px 24px 0px rgba(0,0,0,0.13);
 				@include border-radius(10px);
 				p{
-					@media screen and(max-width: $screen-sm){
+					@media screen and (max-width: $screen-sm){
 						display: none;
 					}
 				}
@@ -828,7 +828,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		background-repeat: no-repeat;
 		position: relative;
 		height: 300px;
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			height: 400px;
 		}
 	}
@@ -913,7 +913,7 @@ box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.13);
 		background-repeat: no-repeat;
 		position: relative;
 		height: 300px;
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			height: 400px;
 		}
 	}
@@ -1018,7 +1018,7 @@ box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.13);
 	.fh5co-footer-links {
 		padding: 0;
 		margin: 0;
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			margin-bottom: 30px;
 		}
 		li {
@@ -1119,7 +1119,7 @@ input[type="text"] {
 	display: none;
 	@include translateX(270px);
 	@include transition(.5s);
-	@media screen and(max-width: $screen-sm){
+	@media screen and (max-width: $screen-sm){
 		display: block;
 	}
 	.offcanvas & {
