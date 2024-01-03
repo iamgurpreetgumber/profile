@@ -249,8 +249,33 @@
 
 	};
 
+
+	let showLogo = function(){
+		var width = 768;
+		$(window).on('load', function(){
+			if ($(window).width() <= width) {
+				$("#desktop-logo").hide();
+				$("#mobile-logo").show();
+			} else{
+				$("#desktop-logo").show();
+				$("#mobile-logo").hide();
+			}
+		})
+
+		$(window).on('resize', function() {
+			if ($(this).width() <= width) {
+				$("#desktop-logo").hide();
+				$("#mobile-logo").show();
+			} else{
+				$("#desktop-logo").show();
+				$("#mobile-logo").hide();
+			}
+		});
+	}
+
 	
 	$(function(){
+		showLogo();
 		mobileMenuOutsideClick();
 		offcanvasMenu();
 		burgerMenu();
