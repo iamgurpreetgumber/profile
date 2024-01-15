@@ -7,9 +7,9 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #43766C !default;
-$brand-secondary: #F8FAE5 !default;
-$brand-tertiary: #B19470 !default;
+$brand-primary: #4C0104 !default;
+$brand-secondary: #FFE4DE !default;
+$brand-tertiary: #57423F !default;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -172,7 +172,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-	background: $brand-white;
 	.top-menu{
 		padding: 28px 0;
 	}
@@ -192,7 +191,8 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	a {
 		padding: 5px 10px;
-		color: $brand-black;
+		// color: $brand-black;
+		color: white;
 	}
 	.menu-1 {
 		@media screen and (max-width: $screen-sm ) {
@@ -212,7 +212,8 @@ h1, h2, h3, h4, h5, h6, figure {
 			a {
 				font-size: 18px;
 				padding: 30px 15px;
-				color: rgba(0,0,0,.7);
+				// color: rgba(0,0,0,.7);
+				color: white;
 				@include transition(.5s);
 				&:hover,&:focus, &:active {
 					color: rgba(0,0,0,1);
@@ -272,6 +273,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				}
 				&:hover, &:focus {
 					a {
+						// color: $brand-black;
 						color: $brand-black;
 					}
 					.dropdown {
@@ -286,7 +288,7 @@ h1, h2, h3, h4, h5, h6, figure {
 					color: $brand-white;
 					span {
 						background: rgba($brand-primary,1);
-						padding: 4px 10px;
+						padding: 5px 15px;
 						@include inline-block;
 						@include transition(.3s);
 						@include border-radius(100px);
@@ -302,7 +304,8 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 			&.active {
 				> a {
-					color: $brand-black!important;
+					// color: $brand-black!important;
+					color: white !important;
 					position: relative;
 					&:after{
 						position: absolute;
@@ -1499,4 +1502,21 @@ input[type="text"] {
 	.js & {
 		opacity: 0;
 	}
+}
+
+#mobile-logo{
+	display: none;
+}
+
+#fh5co-header{
+	position: relative;
+}
+
+#portfolioVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+	z-index: -99999;
 }
