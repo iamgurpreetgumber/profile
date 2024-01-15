@@ -115,8 +115,6 @@
 
 	};
 
-
-
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.animate-box').waypoint( function( direction ) {
@@ -273,6 +271,23 @@
 		});
 	}
 
+	let typeIt = function(){
+		new TypeIt("#asyncExec", {
+			waitUntilVisible: true,
+		})
+			.type("<span style='color: white;'>From Lines of Code to Digital Symphony – </span>")
+			.exec(async () => {
+				//-- Return a promise that resolves after something happens.
+				await new Promise((resolve, reject) => {
+					setTimeout(() => {
+						return resolve();
+					}, 500);
+				});
+			})
+			.type("<span style='color: white; text-decoration: underline;'><strong>Crafting Webmasterpieces</strong></span>")
+			.go();
+	}
+
 	
 	$(function(){
 		showLogo();
@@ -286,6 +301,7 @@
 		loaderPage();
 		counterWayPoint();
 		fullHeight();
+		typeIt();
 	});
 
 
