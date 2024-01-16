@@ -584,8 +584,13 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .slider-text-bg .desc {
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text-bg .desc p {
-    display: none;
+    display: block;
   }
 }
 #fh5co-hero .flexslider .slider-text,
